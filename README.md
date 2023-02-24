@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Rite de passage du padawan Front
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Préambule
 
-## Available Scripts
+L'objectif principal de ce test est de nous permettre d'évaluer votre coding style, votre rigueur et votre capacité à produire du beau code.
+En parlant de beauté, vous êtes totalement libre concernant l'UI/UX de l'application: vous pouvez utiliser le framework CSS de votre choix afin d'embellir votre oeuvre. La seule condition à respecter étant que __l'application doit être responsive__.
 
-In the project directory, you can run:
+## VueJS
 
-### `npm start`
+Une application VueJS a été installée au préalable afin de vous aider à commencer le test. Cependant, libre à vous de changer de framework.
+Vous pouvez lancer l'application via la commande `npm run dev`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## JSON Server
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ce test utilise `json-server` pour simuler une api REST.
+https://github.com/typicode/json-server
+La db est stockée dans le fichier json `db.json` situé à la racine du projet.
 
-### `npm test`
+Vous pouvez lancer l'api REST avec la commande `npm run server`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Les épreuves
 
-### `npm run build`
+### Épreuve 1
+Votre première épreuve consistera à afficher la vente déjà créée et ses lots dans l'application VueJS.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Épreuve 2
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Votre application devra permettre de créer une vente avec des lots et de les faire persister dans le fichier `db.json`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Épreuve 3
 
-### `npm run eject`
+Créer une nouvelle vue dans laquelle il sera possible de rechercher parmis les ventes et les lots avec un seul champ `input`.
+Cet unique champ de recherche sera capable de trouver des ventes et des lots, à vous de trouver un moyen de les distinguer dans les résultats.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Bonus
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Ajouter le konami code qui affiche un gif de votre choix
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+haut haut bas bas gauche droite gauche droite B A
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+     
