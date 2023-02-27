@@ -17,7 +17,7 @@ export const CardsContainer = styled.div`
     }
 `
 
-export const Card = styled.article`
+export const CardStyle = styled.article`
     max-width: 330px;
     border-radius: 10px;
     border: 1px solid #dddcdc;

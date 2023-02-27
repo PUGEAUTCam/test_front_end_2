@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Img, TextContainer, CardsContainer } from './style';
+import Card from '../card';
+import { CardsContainer } from './style';
 
 const ItemsCards = ({ items }) => {
 
@@ -7,16 +8,11 @@ const ItemsCards = ({ items }) => {
         <CardsContainer>
             {
                 items && items.map((item, index) =>
-                    <Card key={index}>
-                        <Img>
-                            <img src="./galle_vase.jpeg" alt="Exemple d'objets mis aux enchères pour illustrer le lot" />
-                        </Img>
-
-                        <TextContainer>
-                            <p><strong>Lot {index + 1}</strong></p>
-                            <p>{item.description}</p>
-                        </TextContainer>
-                    </Card>
+                    <Card
+                        key={index}
+                        index={index}
+                        item={item}
+                    />
                 )
             }
         </CardsContainer>
