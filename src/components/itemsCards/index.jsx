@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, Img, TextContainer, CardsContainer } from './style';
 
-const ItemCard = ({ items }) => {
+const ItemsCards = ({ items }) => {
 
     return (
         <CardsContainer>
             {
-                items.map((item, index) =>
+                items && items.map((item, index) =>
                     <Card key={index}>
                         <Img>
                             <img src="./galle_vase.jpeg" alt="Exemple d'objets mis aux enchères pour illustrer le lot" />
@@ -23,4 +23,4 @@ const ItemCard = ({ items }) => {
     );
 };
 
-export default ItemCard;
+export default ItemsCards;

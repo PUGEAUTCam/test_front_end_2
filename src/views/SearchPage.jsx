@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { searchItem, searchSales } from '../API';
 import Layout from '../components/layout';
-import ResultSearch from '../components/resultSearch';
+import ResultsSearch from '../components/resultsSearch';
 import { Input } from '../components/styleDefinition/buttons_inputs';
 
 const SearchPage = () => {
@@ -29,7 +29,7 @@ const SearchPage = () => {
                     placeholder='ex: Hermès Sac en cuir noir...'
                     onChange={(e) => setSearch(e.target.value)} />
             </div>
-            <ResultSearch dataSales={dataSales} dataItems={dataItems} />
+            <ResultsSearch dataSales={dataSales} dataItems={dataItems} />
         </Layout>
     );
 };

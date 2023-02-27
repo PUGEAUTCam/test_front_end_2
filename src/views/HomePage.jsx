@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getAllSales } from '../API';
-import ItemCard from '../components/itemCard';
-import { SectionHomePage } from '../components/itemCard/style';
+import ItemsCards from '../components/itemsCards';
+import { SectionHomePage } from '../components/itemsCards/style';
 import Layout from '../components/layout';
 import SaleBanner from '../components/saleBanner';
 
@@ -19,7 +19,7 @@ const HomePage = () => {
                 data?.map((sale, index) =>
                     <SectionHomePage key={index}>
                         <SaleBanner title={sale.title} description={sale.description} />
-                        <ItemCard items={sale.items} />
+                        <ItemsCards items={sale.items} />
                     </SectionHomePage>
                 )
             }
